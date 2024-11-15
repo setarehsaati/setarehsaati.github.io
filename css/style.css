@@ -1,0 +1,274 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(/font/TT\ Norms\ Pro\ Medium.otf);
+}
+html {
+  font-family: "myFirstFont", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+}
+.warming h2 {
+  font-size: 0.8rem;
+}
+.btn1 {
+  color: white;
+}
+.btn1:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  color: black;
+}
+
+.btn2 {
+  background-color: #006ce1;
+  color: white;
+}
+.btn2:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #0041c2;
+}
+.nav-icon {
+  border: none;
+  background: transparent;
+}
+/* sub */
+.sub-footer {
+  width: 100%;
+  margin-top: -10px;
+}
+.not-footer {
+  width: 90%;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-footer {
+  width: 90%;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gol-right {
+  width: 200px;
+  height: 30px;
+}
+.icon-footer {
+  display: flex;
+}
+.gol-left {
+  flex-grow: 1;
+}
+.gol-right img {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+}
+
+/* div.list */
+.list {
+  width: 90%;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+}
+.list-1 {
+  border-right: 1px solid #ccc6c6;
+}
+.list-titel-foote {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2;
+  font-family: "LGEI Text", sans-serif;
+  color: #000000;
+  overflow-wrap: inherit;
+  cursor: pointer;
+  display: inline-block;
+
+  font-weight: 500;
+  cursor: default;
+}
+.list-1-1 {
+  width: 450px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.list-1-2 {
+  display: flex;
+  width: 450px;
+  margin-bottom: 20px;
+}
+.list-1-3 {
+  display: flex;
+  width: 450px;
+  margin-bottom: 20px;
+}
+.list-1-1 li {
+  list-style: none;
+  width: 200px;
+}
+.list-1-2 li {
+  list-style: none;
+}
+.list-1-3 li {
+  list-style: none;
+}
+.list-footer {
+  color: rgb(129, 129, 129);
+  text-decoration: none;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  font-family: "LGEI Text", sans-serif;
+  overflow-wrap: inherit;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  gap: 10px;
+}
+.list-2 {
+  flex-grow: 1;
+
+  margin-left: 20px;
+  border-right: 1px solid #ccc6c6;
+}
+.list-2 li {
+  list-style: none;
+}
+.list-3 {
+  flex-grow: 1;
+  width: 300px;
+  margin-left: 20px;
+  border-right: 1px solid #ccc6c6;
+}
+.list-3 li {
+  list-style: none;
+}
+.list-4 {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.list-4 li {
+  list-style: none;
+}
+.first-footer {
+  flex-grow: 1;
+}
+
+/* back */
+.back {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #0000002a;
+  position: fixed;
+  left: 90%;
+  top: 85%;
+}
+.back button a {
+  position: fixed;
+  padding: 100%;
+}
+.back button {
+  position: fixeds;
+}
+.back button a i {
+  font-size: 25px;
+  position: fixed;
+  left: 91.6%;
+  top: 88.3%;
+}
+.slider-control {
+  height: 80vh;
+}
+
+@media screen and (min-width: 992px) {
+  /* استایل برای کل منو */
+  .dropdown-menu-fullscreen {
+    width: 98.95vw;
+    padding: 25px;
+    background-color: #f8f9fa;
+    color: #000000;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+  }
+
+  .menu-item:hover .dropdown-menu-fullscreen {
+    display: flex;
+  }
+
+  .menu-columns {
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .menu-column {
+    flex: 1;
+  }
+
+  .menu-column h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .menu-column a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu-column a:hover {
+    color: #aaa;
+  }
+
+  /* مخفی کردن بخش‌های محتوای ستون دوم به صورت پیش‌فرض */
+  .content-work,
+  .content-creators,
+  .content-students {
+    display: none;
+  }
+
+  /* نمایش محتوای ستون دوم بر اساس هاور */
+  .hover-work:hover ~ .menu-column .content-work,
+  .hover-creators:hover ~ .menu-column .content-creators,
+  .hover-students:hover ~ .menu-column .content-students {
+    display: block;
+    position: absolute;
+  }
+
+  /* نمایش ستون سوم به صورت ثابت */
+  .fixed-products {
+    display: block;
+  }
+  .sub-meno-supprot {
+    font-size: 15px;
+    margin-top: 13px;
+    width: 150px;
+    height: 180px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .sub-meno-supprot li:hover {
+    background-color: #f8f9fa;
+  }
+  .support-item:hover .sub-meno-supprot {
+    display: block;
+    transition: all 0.3 ease-in-out;
+    border-bottom: solid 3px black;
+  }
+  .navbar li a {
+    font-size: 15px;
+  }
+  .navbar li a i {
+    font-size: 20px;
+  }
+}
