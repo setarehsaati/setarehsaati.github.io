@@ -31,10 +31,7 @@ html {
   background: transparent;
 }
 /* sub */
-.sub-footer {
-  width: 100%;
-  margin-top: -10px;
-}
+
 .not-footer {
   width: 90%;
   padding-top: 30px;
@@ -48,8 +45,15 @@ html {
   margin-right: auto;
 }
 .gol-right {
-  width: 200px;
+  /* width: 200px; */
   height: 30px;
+}
+.gol-right a {
+  font-size: large;
+  color: #000;
+}
+.gol-right a i {
+  font-size: 30px;
 }
 .icon-footer {
   display: flex;
@@ -66,15 +70,13 @@ html {
 /* div.list */
 .list {
   width: 90%;
-  height: 1000px;
+  height: 700px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   display: flex;
 }
-.list-1 {
-  border-right: 1px solid #ccc6c6;
-}
+/* */
 .list-titel-foote {
   margin-top: 20px;
   font-weight: 600;
@@ -88,6 +90,18 @@ html {
 
   font-weight: 500;
   cursor: default;
+}
+.list-1 {
+  height: 650px;
+}
+.list-2 {
+  height: 650px;
+}
+.list-3 {
+  height: 650px;
+}
+.list-4 {
+  height: 650px;
 }
 .list-1-1 {
   width: 450px;
@@ -132,7 +146,7 @@ html {
   flex-grow: 1;
 
   margin-left: 20px;
-  border-right: 1px solid #ccc6c6;
+  /* border-right: 1px solid #ccc6c6; */
 }
 .list-2 li {
   list-style: none;
@@ -141,7 +155,7 @@ html {
   flex-grow: 1;
   width: 300px;
   margin-left: 20px;
-  border-right: 1px solid #ccc6c6;
+  /* border-right: 1px solid #ccc6c6; */
 }
 .list-3 li {
   list-style: none;
@@ -156,35 +170,124 @@ html {
 .first-footer {
   flex-grow: 1;
 }
-
+/* last */
+.padding-last {
+  width: 30px;
+}
 /* back */
 .back {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #0000002a;
-  position: fixed;
-  left: 90%;
-  top: 85%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 80%;
+  top: 90%;
 }
-.back button a {
-  position: fixed;
-  padding: 100%;
-}
-.back button {
-  position: fixeds;
-}
-.back button a i {
-  font-size: 25px;
-  position: fixed;
-  left: 91.6%;
-  top: 88.3%;
-}
+
 .slider-control {
   height: 80vh;
 }
+.gol-center a {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+.padding-last:hover {
+  width: 30px;
+  color: #000000;
+  border-bottom: solid 1px #000000;
+  transition: all 0.3 ease-in-out;
+}
+.padding-last1 {
+  width: 300px;
+}
+.carousel-text {
+  top: -5px;
+  left: 20%;
+}
+.text-par {
+  font-size: calc(1rem + 0.2vh);
+  font-weight: 600;
+  color: #000;
+}
+.text-head {
+  font-size: calc(1rem + 0.2vh);
+  font-weight: 400;
+  color: #000;
+}
+.link-text {
+  font-size: calc(0.8rem + 0.8vh);
+  font-weight: 400;
+  text-decoration: none;
+  color: #006ce1;
+  transition: all 0.3 ease-in 0s;
+}
+.link-text:hover {
+  color: #889aad;
+}
+.card-text-1 {
+  color: #26814c;
+}
+.section2-text {
+  text-align: center;
+  top: 40%;
+}
+.link-text-2 {
+  margin-left: 40%;
+}
+.card-1 {
+  top: 60%;
+}
+.card-2 {
+  top: 50%;
+}
+.card-3 {
+  top: 60%;
+}
+.card-img-overlay {
+  /* top: 60%; */
+  transition: all 0.3 ease-in-out 0s;
+}
+
+.card-img-overlay {
+  transform: scale(1.1);
+}
+.card-6 {
+  top: 60%;
+}
+.card-5 {
+  top: 48%;
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .text-par {
+    font-size: calc(1rem + 2vh);
+    font-weight: 600;
+  }
+  .text-head {
+    font-size: calc(1rem + 2vh);
+    font-weight: 400;
+  }
+  .link-text {
+    font-size: calc(1rem + 0.5vh);
+  }
+
+  .carousel-text {
+    top: 10%;
+  }
+  .card-title {
+    font-size: calc(1rem + 2vh);
+  }
+  .section2-text {
+    text-align: center;
+    top: 60%;
+  }
+}
 
 @media screen and (min-width: 992px) {
+  .back {
+    left: 90%;
+    top: 85%;
+  }
   /* استایل برای کل منو */
   .dropdown-menu-fullscreen {
     width: 98.95vw;
@@ -270,5 +373,92 @@ html {
   }
   .navbar li a i {
     font-size: 20px;
+  }
+  .sub-footer {
+    height: 710px;
+  }
+  .first:hover .child {
+    transform: all 0.3 ease 0s;
+  }
+  .list-firest-section {
+    list-style: none;
+    color: #000000;
+  }
+  .list-firest-section a {
+    color: #b3b3b3;
+    transition: all 0.4 ease-in-out 0ms;
+  }
+  .list-firest-section a:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+  .list-first-1 {
+    width: 200px;
+    height: 100px;
+  }
+  .btn-list:hover .list-first-1 {
+    z-index: 1;
+  }
+  .parent {
+    position: relative;
+    width: 30px;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  .parent img {
+    position: absolute;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .parent img:first-child {
+    opacity: 1;
+  }
+
+  .parent img:last-child {
+    opacity: 0;
+  }
+
+  .parent:hover img:first-child {
+    opacity: 0;
+  }
+
+  .parent:hover img:last-child {
+    opacity: 1;
+  }
+  .carousel-control-next {
+    position: absolute;
+    height: 98%;
+    width: 10vh;
+  }
+  .carousel-control-prev {
+    position: absolute;
+    height: 98%;
+    width: 10vh;
+  }
+  .carousel-text {
+    top: 30%;
+    left: -30%;
+  }
+  .text-head {
+    font-size: calc(1rem + 2vh);
+    font-weight: 600;
+  }
+  .text-par {
+    font-size: calc(1rem + 1vh);
+  }
+  .link-text {
+    font-size: calc(0.8rem + 0.5vh);
+  }
+  .section2-text {
+    top: 35%;
+    right: 40%;
+  }
+  .card-2 {
+    top: 10%;
+  }
+  .card-3 {
+    top: 60%;
   }
 }
